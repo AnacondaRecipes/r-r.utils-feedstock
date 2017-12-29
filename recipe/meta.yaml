@@ -1,4 +1,4 @@
-{% set version = '2.5.0' %}
+{% set version = '2.6.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/R.utils_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/R.utils/R.utils_{{ version }}.tar.gz
-  sha256: 1ae1a0f0c6a4972bb2369a2dbccd29ade87d747255ff9cb5a0bd784a5be1039f
+  sha256: 5d64993d1209b512a4e97f2edecdbc185f4a369ee5fa2e334ed2cf017486470e
 
 
   # patches:
@@ -33,12 +33,12 @@ requirements:
   build:
     - r-base
     - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.20.0
+    - r-r.oo >=1.21.0
 
   run:
     - r-base
     - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.20.0
+    - r-r.oo >=1.21.0
 
 test:
   commands:
@@ -67,11 +67,11 @@ extra:
 # The original CRAN metadata for this package was:
 
 # Package: R.utils
-# Version: 2.5.0
-# Depends: R (>= 2.14.0), R.oo (>= 1.20.0)
+# Version: 2.6.0
+# Depends: R (>= 2.14.0), R.oo (>= 1.21.0)
 # Imports: methods, utils, tools, R.methodsS3 (>= 1.7.1)
 # Suggests: digest (>= 0.6.10)
-# Date: 2016-11-07
+# Date: 2017-11-04
 # Title: Various Programming Utilities
 # Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"), email = "henrikb@braju.com"))
 # Author: Henrik Bengtsson [aut, cre, cph]
@@ -81,10 +81,11 @@ extra:
 # LazyLoad: TRUE
 # URL: https://github.com/HenrikBengtsson/R.utils
 # BugReports: https://github.com/HenrikBengtsson/R.utils/issues
+# RoxygenNote: 6.0.1
 # NeedsCompilation: no
-# Packaged: 2016-11-07 15:58:57 UTC; hb
+# Packaged: 2017-11-04 17:21:15 UTC; hb
 # Repository: CRAN
-# Date/Publication: 2016-11-07 21:07:28
+# Date/Publication: 2017-11-05 15:03:17 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
