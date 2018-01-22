@@ -10,8 +10,8 @@ package:
 source:
   fn: R.utils_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/R.utils_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/R.utils/R.utils_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/R.utils_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/R.utils/R.utils_{{ version }}.tar.gz
   sha256: 5d64993d1209b512a4e97f2edecdbc185f4a369ee5fa2e334ed2cf017486470e
 
 
