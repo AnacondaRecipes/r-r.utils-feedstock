@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: R.utils_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/R.utils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.utils/R.utils_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: digest (>= 0.6.10)
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
